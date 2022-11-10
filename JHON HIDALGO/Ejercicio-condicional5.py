@@ -1,13 +1,26 @@
-#Ejercicio 4 de condicionales
+#CONDICIONALES
 
-nota_a = float(input("Ingrese su primera nota: "))
-nota_b = float(input("Ingrese su segunda nota: "))
-nota_c = float(input("Ingrese su tercera nota: "))
+'''5.	Desarrolle el programa que dado un número de 4 cifras, forme el mayor número posible de dos cifras 
+usando la mayor y menor cifra del número ingresado'''
 
-if nota_c < 10:
-    nota_c =+2
+#Ejercicio 5 de condicionales
 
-promedio = float((nota_a + nota_b + nota_c)/3)
+numero = input("COLOQUE NUMERO DE 4 CIFRAS: ")
 
-print(promedio)
+if len(numero) !=4:
+    print("ERROR!!!!!, EL NUMERO DEBE SER DE 4 CIFRAS")
 
+else:
+    cifra_MENOR = 10
+    cifra_MAYOR = 0
+
+    for cifra in numero:
+        if (int(cifra) < cifra_MENOR):
+            cifra_MENOR = int(cifra);
+
+        elif (int(cifra) > cifra_MAYOR):
+            cifra_MAYOR = int(cifra);
+    
+    print(f"MAYOR NUMERO POSIBLE ES: {str(cifra_MAYOR)}{str(cifra_MENOR)}");
+    
+        

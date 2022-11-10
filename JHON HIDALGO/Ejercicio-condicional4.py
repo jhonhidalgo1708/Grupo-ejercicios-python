@@ -6,13 +6,13 @@ práctica calificada, si es que esta no es menor que 10. Desarrolle el programa 
 alumno conociendo sus tres notas. '''
 
 
-nota_a = float(input("COLOQUE EL VALOR DE SU 1RA NOTA: "))
-nota_b = float(input("COLOQUE EL VALOR DE SU 2DA NOTA: "))
-nota_c = float(input("COLOQUE EL VALOR DE SU 3RA NOTA: "))
+NOTA_1 = float(input("COLOQUE EL VALOR DE SU 1RA NOTA: "))
+NOTA_2 = float(input("COLOQUE EL VALOR DE SU 2DA NOTA: "))
+NOTA_3 = float(input("COLOQUE EL VALOR DE SU 3RA NOTA: "))
 
-if nota_c >10:
-    nota_c +=2
+if NOTA_3 >10:
+    NOTA_3 +=2
 
-promedio = float((nota_a + nota_b + nota_c)/3)
+promedio = float((NOTA_1 + NOTA_2 + NOTA_3)/3)
 
 print(promedio)

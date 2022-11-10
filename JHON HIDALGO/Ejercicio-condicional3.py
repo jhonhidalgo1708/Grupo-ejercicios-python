@@ -4,25 +4,25 @@ Obtuso (90° < x <180°), Llano (180°), Cóncavo (180°< x < 360°), Completo (
 Desarrolle el programa que determine la clasificación de un ángulo dado en grados.'''
 
 
-angulo =  int(input("INGRESE EL ÁNGULO: "))
+med_angulo =  int(input("INGRESE EL ÁNGULO EN GRADOS: "))
 
-if angulo == 0:
-    print("ANGULO NULO!")
+if med_angulo == 0:
+    print("ES ANGULO NULO!")
 
-if angulo == 90:
-    print("ANGULO RECTO!")
+if med_angulo == 90:
+    print("ES ANGULO RECTO!")
 
-if angulo == 360:
-    print("ANGULO COMPLETO!")
+if med_angulo == 360:
+    print("ES ANGULO COMPLETO!")
 
-if angulo == 180:
-    print("ANGULO LLANO!")
+if med_angulo == 180:
+    print("ES ANGULO LLANO!")
 
-if 0 < angulo < 90:
-    print("ANGULO AGUDO!")
+if 0 < med_angulo < 90:
+    print("ES ANGULO AGUDO!")
 
-if 90 < angulo < 180:
-    print("ANGULO OBTUSO!")
+if 90 < med_angulo < 180:
+    print("ES ANGULO OBTUSO!")
 
-if 180 < angulo < 360:
-    print("ANGULO CÓNCAVO")
+if 180 < med_angulo < 360:
+    print("ANGULO CÓNCAVO!")
